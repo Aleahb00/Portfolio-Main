@@ -69,7 +69,7 @@ export default function Contact() {
                         <div style={{fontSize: '12px', color: 'rgba(232,213,183,0.45)'}}>Aleah Bean</div>
                         </div>
                     </a>
-                    <a className="social-link" href="#" rel="noopener noreferrer">
+                    <a className="social-link" href="/Aleah_Bean.Resume.pdf" target="_blank" rel="noopener noreferrer">
                         <div className="social-icon">📄</div>
                         <div>
                         <div style={{fontWeight: '600', fontSize: '14px'}}>Resume</div>
