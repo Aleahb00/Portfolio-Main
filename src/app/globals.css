@@ -460,6 +460,7 @@
     cursor: default;
     position: relative;
     overflow: hidden;
+    max-width: 20rem;
   }
 
   .skill-category::before {
@@ -968,10 +969,71 @@
     transition: opacity 0.3s;
   }
 
+  /* HAMBURGER BUTTON */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 110;
+  }
+
+  .nav-hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--brown-dark);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+  }
+
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
   @media (max-width: 700px) {
-    nav { padding: 14px 20px; }
+    nav { padding: 14px 20px; flex-wrap: wrap; align-items: center; }
     section { padding: 70px 20px; }
     .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
     .hero-name { letter-spacing: -1px; }
     footer { flex-direction: column; gap: 8px; text-align: center; }
+
+    .nav-hamburger { display: flex; }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      order: 3;
+      padding: 12px 0 8px;
+      border-top: 1px solid rgba(200,132,90,0.15);
+      margin-top: 10px;
+    }
+
+    .nav-links.nav-open { display: flex; }
+
+    .nav-links li { width: 100%; }
+
+    .nav-links a {
+      display: block;
+      padding: 12px 4px;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(200,132,90,0.08);
+    }
+
+    .nav-links li:last-child a { border-bottom: none; }
+
+    .nav-cta {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 24px !important;
+    }
   }
