@@ -40,7 +40,7 @@ export default function Projects() {
         <section id="projects">
             <div className="container">
                 <span className="section-label reveal">Selected work</span>
-                <h2 className="section-title reveal">Things I've built</h2>
+                <h2 className="section-title reveal">Projects</h2>
                 <div className="warm-divider reveal"></div>
 
                 <div className="filter-tabs reveal" id="filterTabs">
