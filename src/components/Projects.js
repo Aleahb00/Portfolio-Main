@@ -28,7 +28,7 @@ export default function Projects() {
         },
         {
             title: 'Volunteer Tracking',
-            desc: 'Full-stack Django volunteer tracking system for ER Assist, enabling user submitted work forms with an admin interface to manage, analyze, and export data supporting FEMA grant reporting during the 2026 ice storm response.',
+            desc: 'Full-stack Django volunteer tracking system for ER Assist - enabling user submitted work forms with an admin interface to manage, analyze, and export data supporting FEMA grant reporting during the 2026 ice storm response.',
             stack: ['Django', 'SQLite', 'Vercel'],
             tags: ['fullstack'],
             liveDemo: 'null',
