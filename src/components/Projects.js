@@ -23,7 +23,7 @@ export default function Projects() {
             desc: 'A pet care platform to make pet management easier for owners — Featuring pet profiles, vet appointment management, vaccination records, and a community forum.',
             stack: ['Django', 'SQLite', 'Vercel'],
             tags: ['fullstack'],
-            liveDemo: 'null',
+            liveDemo: 'https://pawcare-site.up.railway.app/',
             github: 'https://github.com/Aleahb00/PawCare.git'
         },
         {
